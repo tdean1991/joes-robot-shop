@@ -1,4 +1,4 @@
-let products_sample = [
+ products_sample = [
   {
     id: 1,
     description:
@@ -173,3 +173,4 @@ let products_sample = [
     discount: 0,
   },
 ];
+
