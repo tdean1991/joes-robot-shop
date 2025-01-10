@@ -2,7 +2,7 @@ let products_sample = [
   {
     id: 1,
     description:
-      "A robot head with an unusually large eye and teloscpic neck -- excellent for exploring high spaces.",
+    "A robot head with an unusually large eye and teloscpic neck -- excellent for exploring high spaces.",
     name: "Large Cyclops",
     imageName: "head-big-eye.png",
     category: "Heads",
