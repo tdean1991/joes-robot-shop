@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from '../catalog/product.model';
 import { CartService } from './cart.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'bot-cart',
-  imports: [],
+  imports: [ CommonModule ],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.sass'
 })
@@ -36,6 +37,11 @@ export class CartComponent implements OnInit {
   getImageUrl(product: IProduct)
   {
     return '/assets/images/robot-parts/' + product.imageName;
+  }
+
+  removeButtonClicked(product: IProduct)
+  {
+    this.cartService.remove(product)
   }
 
   

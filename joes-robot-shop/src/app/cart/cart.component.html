@@ -19,9 +19,10 @@
                         {{ product.price | currency : "USD"}}
                     </div>
                     <div class="discount"></div>
-                    <button></button>
+                    <button class="cta" (click)="removeButtonClicked(product)">Remove</button>
                 </div>
             </div>
         </li>
     </ul>
+    <div class="total">Total: {{ getTotalPrice() | currency : "USD" }} </div>
 </div>
